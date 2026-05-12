@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitar demo | NubeFarma</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="logo" href="index.html" aria-label="NubeFarma inicio"><img src="assets/nubefarma-logo.png" alt="NubeFarma Gestion Farmaceutica Inteligente" /></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
+      <nav class="site-menu" id="site-menu" aria-label="Navegacion principal"><a href="index.html" data-page="index">Inicio</a><a href="soluciones.html" data-page="soluciones">Soluciones</a><a href="beneficios.html" data-page="beneficios">Beneficios</a><a href="precios.html" data-page="precios">Precios</a><a href="recursos.html" data-page="recursos">Recursos</a><a href="nosotros.html" data-page="nosotros">Nosotros</a></nav>
+      <div class="header-actions"><a class="btn btn-orange" href="demo.html">Solicitar demo</a></div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <h1>Solicita una demo personalizada</h1>
+        <p>Completa tus datos o contacta directamente al asesor comercial. Te mostramos el sistema, resolvemos dudas y te ayudamos a elegir el plan correcto.</p>
+      </section>
+      <section class="content-section split">
+        <div>
+          <h2>Agenda una presentacion</h2>
+          <p>Revisaremos tus necesidades, cantidad de sedes, usuarios y procesos actuales para recomendarte la mejor configuracion.</p>
+          <ul class="check-list"><li>Demostracion guiada del sistema</li><li>Revision de inventario, facturacion y reportes</li><li>Recomendacion entre plan mensual, semestral, anual o MiPymes</li></ul>
+          <div class="contact-card">
+            <strong>Asesor comercial</strong>
+            <h3>Armando Jose Alvarez Lagarez</h3>
+            <p>Telefono: +57 320 613 5719</p>
+            <p>Atencion personalizada via WhatsApp</p>
+          </div>
+        </div>
+        <form class="form-panel" data-form>
+          <label>Nombre<input type="text" name="nombre" placeholder="Tu nombre" required /></label>
+          <label>Telefono<input type="tel" name="telefono" placeholder="+57 300 000 0000" required /></label>
+          <label>Nombre de farmacia<input type="text" name="farmacia" placeholder="Farmacia San Jose" /></label>
+          <label>Mensaje<textarea name="mensaje" rows="4" placeholder="Cuentanos que necesitas"></textarea></label>
+          <button class="btn btn-orange" type="submit">Enviar solicitud</button>
+          <p class="form-note" role="status"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="footer"><p>&copy; <span id="year"></span> NubeFarma. Gestion farmaceutica inteligente.</p><a href="demo.html">Solicitar demo</a></footer>
+    <script src="app.js"></script>
+  </body>
+</html>

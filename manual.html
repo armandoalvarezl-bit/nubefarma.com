@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual de Usuario | NubeFarma POS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="logo" href="index.html" aria-label="NubeFarma inicio"><img src="assets/nubefarma-logo.png" alt="NubeFarma Gestion Farmaceutica Inteligente" /></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
+      <nav class="site-menu" id="site-menu" aria-label="Navegacion principal"><a href="index.html" data-page="index">Inicio</a><a href="soluciones.html" data-page="soluciones">Soluciones</a><a href="beneficios.html" data-page="beneficios">Beneficios</a><a href="precios.html" data-page="precios">Precios</a><a href="recursos.html" data-page="recursos">Recursos</a><a href="nosotros.html" data-page="nosotros">Nosotros</a></nav>
+      <div class="header-actions"><a class="btn btn-orange" href="demo.html">Solicitar demo</a></div>
+    </header>
+
+    <main class="manual-page">
+      <section class="manual-hero">
+        <div class="manual-hero-copy">
+          <img src="assets/nubefarma-logo.png" alt="NubeFarma" />
+          <h1>Manual de Usuario</h1>
+          <p class="manual-subtitle">Y uso de la plataforma <strong>Farma POS</strong></p>
+          <p>
+            Esta guia te ayudara a utilizar de forma correcta todas las funciones del sistema para mejorar
+            la gestion diaria de tu farmacia.
+          </p>
+          <a class="btn btn-orange btn-large" href="#contenido-manual">Ver manual</a>
+        </div>
+        <div class="manual-hero-visual" aria-label="Equipos y panel de Farma POS">
+          <div class="manual-laptop">
+            <div class="manual-screen">
+              <aside><span>Dashboard</span><span>Ventas</span><span>Productos</span><span>Clientes</span><span>Reportes</span></aside>
+              <section>
+                <h3>Dashboard</h3>
+                <div class="manual-kpis"><b>$2.350.000</b><b>125</b><b>1.482</b><b>853</b></div>
+                <div class="manual-mini-chart"><i></i><i></i><i></i><i></i><i></i></div>
+              </section>
+            </div>
+          </div>
+          <div class="manual-device printer">Ticket</div>
+          <div class="manual-device scanner">Codigo</div>
+          <div class="manual-medicine med-a">Paracetamol</div>
+          <div class="manual-medicine med-b">Dicloxacilina</div>
+        </div>
+      </section>
+
+      <section class="manual-grid" id="contenido-manual">
+        <article class="manual-card blue">
+          <h2><span>1</span> Objetivo del sistema</h2>
+          <p><strong>Farma POS</strong> es una plataforma para la operacion diaria de farmacias o puntos de venta similares. Permite:</p>
+          <ul class="manual-checks">
+            <li>Iniciar sesion con usuarios validados en linea.</li>
+            <li>Registrar ventas y emitir tickets.</li>
+            <li>Controlar inventario y sincronizar con Google Sheets.</li>
+            <li>Gestionar clientes y puntos.</li>
+            <li>Registrar retiros de caja.</li>
+            <li>Realizar cierres de caja.</li>
+            <li>Consultar historico de ventas.</li>
+          </ul>
+          <div class="manual-note">El sistema funciona en interfaz web y tambien en modo escritorio con Electron.</div>
+        </article>
+
+        <article class="manual-card orange">
+          <h2><span>2</span> Estructura general</h2>
+          <p>Las principales pantallas del sistema son:</p>
+          <ol class="manual-steps">
+            <li><strong>pos.html:</strong> ingreso al sistema.</li>
+            <li><strong>dashboard.html:</strong> panel general.</li>
+            <li><strong>ventas.html:</strong> punto de venta.</li>
+            <li><strong>historico-ventas.html:</strong> consulta y anulacion de tickets.</li>
+            <li><strong>retiros-caja.html:</strong> retiros de caja.</li>
+            <li><strong>cierre-caja.html:</strong> cierre diario o por turno.</li>
+            <li><strong>clientes.html:</strong> registro y consulta de clientes.</li>
+            <li><strong>reporte.html:</strong> reportes de gestion.</li>
+          </ol>
+          <div class="manual-note">El logo puede mostrarse en la fase y nombre, pero los datos de tu farmacia siempre van primero.</div>
+        </article>
+
+        <article class="manual-card blue">
+          <h2><span>3</span> Requisitos de uso</h2>
+          <div class="manual-requirements">
+            <p><strong>Conexion a internet</strong> para validar usuarios y sincronizar informacion.</p>
+            <p><strong>Google Sheets + Apps Script</strong> configurado.</p>
+            <p>Usar un <strong>navegador moderno</strong> como Chrome, Edge o Firefox.</p>
+          </div>
+          <h3>Para modo escritorio:</h3>
+          <ul>
+            <li>Node.js 20 o superior.</li>
+            <li>npm install</li>
+            <li>npm start</li>
+          </ul>
+        </article>
+
+        <article class="manual-card orange">
+          <h2><span>4</span> Inicio de sesion</h2>
+          <ol class="manual-steps compact">
+            <li>Escribe el usuario.</li>
+            <li>Escribe la contrasena.</li>
+            <li>Pulsa <strong>Entrar al sistema</strong>.</li>
+          </ol>
+          <div class="manual-lock">Acceso protegido por usuario y contrasena.</div>
+        </article>
+
+        <article class="manual-card orange wide">
+          <h2><span>6</span> Modulos principales</h2>
+          <div class="manual-modules">
+            <div><strong>Ventas</strong><small>Registra ventas y emite tickets.</small></div>
+            <div><strong>Inventario</strong><small>Administra productos y stock.</small></div>
+            <div><strong>Clientes</strong><small>Gestiona clientes y puntos.</small></div>
+            <div><strong>Retiros de caja</strong><small>Controla salidas de efectivo.</small></div>
+            <div><strong>Cierre de caja</strong><small>Cierra turnos y genera resumenes.</small></div>
+            <div><strong>Reportes</strong><small>Consulta reportes de gestion.</small></div>
+          </div>
+        </article>
+
+        <article class="manual-card benefits">
+          <h2>Mejores beneficios</h2>
+          <div class="benefit-list">
+            <p><strong>Mas control</strong><span>Ten el control total de tu farmacia.</span></p>
+            <p><strong>Mejores ventas</strong><span>Procesos rapidos y eficientes.</span></p>
+            <p><strong>Clientes felices</strong><span>Atencion agil y personalizada.</span></p>
+            <p><strong>Futuro seguro</strong><span>Tu informacion siempre protegida.</span></p>
+          </div>
+        </article>
+      </section>
+
+      <section class="manual-closing">
+        <strong>NubeFarma POS, tu aliado en cada venta</strong>
+        <span>Juntos crecemos mas.</span>
+      </section>
+    </main>
+
+    <footer class="footer"><p>&copy; <span id="year"></span> NubeFarma. Gestion farmaceutica inteligente.</p><a href="demo.html">Solicitar demo</a></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
